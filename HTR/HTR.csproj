@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15D165C4-48F1-4D43-A22F-2785B522333E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HTR</RootNamespace>
+    <AssemblyName>JDEGREE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>校准验证监控系统</ProductName>
+    <PublisherName>晶度技术（北京）有限公司</PublisherName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>05186EC40BF41D440C553CEDE1AB223F3D3AEF66</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HTR_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\JD-HTR\Software\HTR_S11\HTR\bin\Debug\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="HZH_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HZH_Controls.1.0.14\lib\net40\HZH_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.Excel.2.1.1\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.Excel.2.1.1\lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.1.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.Excel.2.1.1\lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.1.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.Excel.2.1.1\lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.Excel.2.1.1\lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Spire.License, Version=1.3.8.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\JD-HTR\Software\HTR_S11\HTR\bin\Debug\Spire.License.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=6.9.16.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\JD-HTR\Software\HTR_S11\HTR\bin\Debug\Spire.Pdf.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataFileTable.cs" />
+    <Compile Include="FolderSelectDialog.cs" />
+    <Compile Include="MainTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainTest.Designer.cs">
+      <DependentUpon>MainTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAccountPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuAccountPanel.Designer.cs">
+      <DependentUpon>MenuAccountPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCodePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuCodePanel.Designer.cs">
+      <DependentUpon>MenuCodePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCalCurvePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuCalCurvePanel.Designer.cs">
+      <DependentUpon>MenuCalCurvePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDataCorrection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDataCorrection.Designer.cs">
+      <DependentUpon>MenuDataCorrection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDataImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDataImport.Designer.cs">
+      <DependentUpon>MenuDataImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPDFViewPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuPDFViewPanel.Designer.cs">
+      <DependentUpon>MenuPDFViewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPermissionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuPermissionPanel.Designer.cs">
+      <DependentUpon>MenuPermissionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSETValForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSETValForm.Designer.cs">
+      <DependentUpon>MenuSETValForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSTDPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuSTDPanel.Designer.cs">
+      <DependentUpon>MenuSTDPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTracePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuTracePanel.Designer.cs">
+      <DependentUpon>MenuTracePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDataPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuDataPanel.Designer.cs">
+      <DependentUpon>MenuDataPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuVerifyPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuVerifyPanel.Designer.cs">
+      <DependentUpon>MenuVerifyPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRC.cs" />
+    <Compile Include="dataTableClass.cs" />
+    <Compile Include="HeaderFooterEvent.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLoginForm.Designer.cs">
+      <DependentUpon>MenuLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCalPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuCalPanel.Designer.cs">
+      <DependentUpon>MenuCalPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEnterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEnterForm.Designer.cs">
+      <DependentUpon>MenuEnterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFactoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFactoryForm.Designer.cs">
+      <DependentUpon>MenuFactoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDataCurvePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuDataCurvePanel.Designer.cs">
+      <DependentUpon>MenuDataCurvePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuReportPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuReportPanel.Designer.cs">
+      <DependentUpon>MenuReportPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSaftyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSaftyForm.Designer.cs">
+      <DependentUpon>MenuSaftyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSelectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuSelectPanel.Designer.cs">
+      <DependentUpon>MenuSelectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSettingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuSettingPanel.Designer.cs">
+      <DependentUpon>MenuSettingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuVersionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuVersionForm.Designer.cs">
+      <DependentUpon>MenuVersionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mydefine.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SCT.Define.cs" />
+    <Compile Include="SCT.Function.cs" />
+    <Compile Include="MenuSetPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuSetPanel.Designer.cs">
+      <DependentUpon>MenuSetPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuToCondense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuToCondense.Designer.cs">
+      <DependentUpon>MenuToCondense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XET.define.cs" />
+    <Compile Include="XET.Function.cs" />
+    <EmbeddedResource Include="MainTest.resx">
+      <DependentUpon>MainTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAccountPanel.resx">
+      <DependentUpon>MenuAccountPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCodePanel.resx">
+      <DependentUpon>MenuCodePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCalCurvePanel.resx">
+      <DependentUpon>MenuCalCurvePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDataCorrection.resx">
+      <DependentUpon>MenuDataCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDataImport.resx">
+      <DependentUpon>MenuDataImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPDFViewPanel.resx">
+      <DependentUpon>MenuPDFViewPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPermissionPanel.resx">
+      <DependentUpon>MenuPermissionPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSETValForm.resx">
+      <DependentUpon>MenuSETValForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSTDPanel.resx">
+      <DependentUpon>MenuSTDPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTracePanel.resx">
+      <DependentUpon>MenuTracePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDataPanel.resx">
+      <DependentUpon>MenuDataPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuVerifyPanel.resx">
+      <DependentUpon>MenuVerifyPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuLoginForm.resx">
+      <DependentUpon>MenuLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCalPanel.resx">
+      <DependentUpon>MenuCalPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEnterForm.resx">
+      <DependentUpon>MenuEnterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFactoryForm.resx">
+      <DependentUpon>MenuFactoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDataCurvePanel.resx">
+      <DependentUpon>MenuDataCurvePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReportPanel.resx">
+      <DependentUpon>MenuReportPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSaftyForm.resx">
+      <DependentUpon>MenuSaftyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSelectPanel.resx">
+      <DependentUpon>MenuSelectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSettingPanel.resx">
+      <DependentUpon>MenuSettingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuVersionForm.resx">
+      <DependentUpon>MenuVersionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSetPanel.resx">
+      <DependentUpon>MenuSetPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuToCondense.resx">
+      <DependentUpon>MenuToCondense.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HTR_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-界面-banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮-o3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-界面1-LOGO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-界面1-LOGO2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-界面1-2-3banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGO.ico" />
+    <None Include="Resources\探头.png" />
+    <None Include="Resources\加载模式链条.png" />
+    <None Include="Resources\HTQ模型_open.PNG" />
+    <None Include="Resources\按钮1.png" />
+    <None Include="Resources\1-界面1-LOGO.png" />
+    <None Include="Resources\3-界面3-右上登录头像.png" />
+    <None Include="Resources\4-界面-左侧按钮-报告-gray.png" />
+    <None Include="Resources\4-界面-左侧按钮-后校验-blue.png" />
+    <None Include="Resources\4-界面-左侧按钮-后校验-gray.png" />
+    <None Include="Resources\4-界面-左侧按钮-监控-blue.png" />
+    <None Include="Resources\4-界面-左侧按钮-监控-gray.png" />
+    <None Include="Resources\4-界面-左侧按钮-连接-blue.png" />
+    <None Include="Resources\4-界面-左侧按钮-连接-gray.png" />
+    <None Include="Resources\4-界面-左侧按钮-前校准-gray.png" />
+    <None Include="Resources\4-界面-左侧按钮-设置-blue.png" />
+    <None Include="Resources\4-界面-左侧按钮-设置-gray.png" />
+    <None Include="Resources\4-界面-左侧按钮-校准-blue.png" />
+    <None Include="Resources\4-界面-左侧按钮-校准-gray.png" />
+    <None Include="Resources\4-界面-左侧按钮-验证-blue.png" />
+    <None Include="Resources\4-界面-左侧按钮-验证-gray.png" />
+    <None Include="Resources\4-界面-左上LOGO.png" />
+    <None Include="Resources\5-界面-按钮-安全设置.png" />
+    <None Include="Resources\5-界面-按钮-出厂编号.png" />
+    <None Include="Resources\5-界面-按钮-出厂标定.png" />
+    <None Include="Resources\5-界面-按钮-出厂设置.png" />
+    <None Include="Resources\5-界面-按钮-软件版本.png" />
+    <None Include="Resources\5-界面-按钮-设备命名.png" />
+    <None Include="Resources\5-界面-按钮-修改密码.png" />
+    <None Include="Resources\5-界面-按钮-用户管理.png" />
+    <None Include="Resources\3-界面3-按钮-无线监控系统.png" />
+    <None Include="Resources\3-界面3-按钮-无线验证系统.png" />
+    <None Include="Resources\3-界面3-按钮-校准系统.png" />
+    <None Include="Resources\4-界面-左侧按钮-前校准-blue.png" />
+    <None Include="Resources\报告查看-1.png" />
+    <None Include="Resources\报告查看-2.png" />
+    <None Include="Resources\连接界面-1.png" />
+    <None Include="Resources\连接界面-2.png" />
+    <None Include="Resources\数据处理-1.png" />
+    <None Include="Resources\数据处理-2.png" />
+    <None Include="Resources\系统设置-1.png" />
+    <None Include="Resources\系统设置-2.png" />
+    <None Include="Resources\校准界面-1.png" />
+    <None Include="Resources\校准界面-2.png" />
+    <None Include="Resources\验证界面-1.png" />
+    <None Include="Resources\验证界面-2.png" />
+    <None Include="Resources\审计追踪.png" />
+    <Content Include="ICON.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

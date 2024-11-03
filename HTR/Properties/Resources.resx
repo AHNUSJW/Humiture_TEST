@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="验证界面_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\验证界面-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_界面3_按钮_无线监控系统" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3-界面3-按钮-无线监控系统.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_校准_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-校准-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="连接界面_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\连接界面-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_前校准_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-前校准-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_验证_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-验证-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="系统设置_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\系统设置-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="数据处理_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\数据处理-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_界面_按钮_软件版本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-界面-按钮-软件版本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="按钮-gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\按钮-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_监控_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-监控-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1_界面1_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1-界面1-LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="按钮-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\按钮-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_校准_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-校准-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_报告_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-报告-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="系统设置_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\系统设置-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_设置_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-设置-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="数据处理_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\数据处理-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_界面3_按钮_校准系统" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3-界面3-按钮-校准系统.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_界面_按钮_修改密码" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-界面-按钮-修改密码.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="按钮1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\按钮1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="校准界面_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\校准界面-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="验证界面_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\验证界面-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_界面_按钮_出厂设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-界面-按钮-出厂设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_后校验_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-后校验-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_连接_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-连接-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_设置_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-设置-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1-界面1-2-3banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1-界面1-2-3banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_界面3_按钮_无线验证系统" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3-界面3-按钮-无线验证系统.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="按钮-o3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\按钮-o3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_连接_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-连接-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_界面_按钮_用户管理" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-界面-按钮-用户管理.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="校准界面_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\校准界面-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左上LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左上LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_后校验_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-后校验-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="报告查看_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\报告查看-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="报告查看_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\报告查看-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="连接界面_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\连接界面-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_界面_按钮_安全设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-界面-按钮-安全设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_界面_按钮_出厂标定" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-界面-按钮-出厂标定.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_界面_按钮_设备命名" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-界面-按钮-设备命名.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="label" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\label.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_前校准_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-前校准-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="加载模式链条" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\加载模式链条.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HTQ模型_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HTQ模型_open.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="审计追踪" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\审计追踪.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_界面_按钮_出厂编号" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-界面-按钮-出厂编号.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_报告_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-报告-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_验证_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-验证-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4-界面-banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_界面3_右上登录头像" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3-界面3-右上登录头像.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_界面_左侧按钮_监控_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-界面-左侧按钮-监控-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="探头" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\探头.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
